@@ -1,0 +1,44 @@
+@import "./../../styles/stylesheet.scss";
+
+
+
+.container-main{
+    .title-addons-wrap{
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
+        .title-addons{
+            font-weight: 700;
+            font-size: 24px;
+            padding: 0 36px 0 36px;
+            @include desktop{
+                font-size: 24px;
+                line-height: 54px;
+                padding-left: 32px;
+            }
+           
+        }
+        .verified-wrap{
+            display: flex;
+            margin: auto;
+            margin-top: 12px;
+            @include desktop{
+                margin-left: auto;
+                margin-right: 10%;
+            }
+            img{
+                height: 40px;
+            }
+            .verified-txt{
+                line-height: 34px;
+                padding-right: 32px;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
+
+

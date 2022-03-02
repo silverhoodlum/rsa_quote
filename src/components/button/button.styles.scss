@@ -1,0 +1,14 @@
+@import "./../../styles/stylesheet.scss";
+
+button.button-rsa{
+    margin-left: auto;
+    margin-top: 18px;
+    background-color:  $main_purple_buttons;
+    &:hover{
+        background-color: $main_pink_light;
+   }
+}
+
+.added{
+    background-color: #af4444;
+}

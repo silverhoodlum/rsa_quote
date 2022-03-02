@@ -1,0 +1,19 @@
+@import "./../../styles/stylesheet.scss";
+
+    .addon-list{
+        font-size: 14px;
+        padding: 2px;
+        margin-bottom: 12px;
+        .addon-list-item{
+            display: flex;
+            padding-top: 2px;
+        }
+        .addon-price{
+            margin-left: auto;
+           
+        }
+    }
+
+    h4{
+        margin-bottom: 4px;
+    }

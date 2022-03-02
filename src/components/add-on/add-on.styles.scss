@@ -1,0 +1,66 @@
+@import "./../../styles/stylesheet.scss";
+
+.addOn-block{
+    background-color: $addOn_color;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    .addOn-description{
+        font-size: 14px;
+        height: 60px;
+        margin: 28px 0 0 0;
+        text-align: start;
+        font-weight: 400;
+        @include desktop{
+            min-height: 80px;
+        }
+    }
+    
+    .addOn-title-wrap{
+        display: flex;
+        .addOn-title{
+            margin: 0;
+            text-align: left;
+            height: 30px;
+            overflow: hidden;
+        }
+    }
+    
+    
+    
+}
+
+.small-addOn{
+    @include desktop{
+        padding: 16px;
+    }
+    .addOn-title-wrap{
+        .addOn-title{
+            @include desktop{
+                height: 50px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    .addOn-description{
+        margin: 16px 0 24px 0;
+        height: 40px;
+        @include desktop{
+            height: 80px;
+            margin: 16px 0 28px 0;
+        }
+        @include desktop_lg{
+            margin: 16px 0 12px 0;
+        }
+    }
+}
+
+
+
+.selected{
+    border: 3px solid $selected;
+}

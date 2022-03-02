@@ -1,0 +1,19 @@
+@import "./../../styles/stylesheet.scss";
+
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+.container-main{
+    padding-top: 24px;
+    padding-bottom: 84px;
+}
+.checkout-grid{
+    @include desktop{
+        height: 500px;
+    }
+  
+}
+

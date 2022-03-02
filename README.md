@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# RSA Insurance - My quote
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project is a react practice test I have developed for RSA, it allows the usuer to add/remove addons as well as switching between monthly or annual payment plans.
 
-In the project directory, you can run:
+[DEMO](https://www.diagrameditor.com/)
 
-### `npm start`
+![image](https://s7.gifyu.com/images/ezgif-2-bbb6fcc3d7.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project has been build mainly using React, React-Hooks & Material UI
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install the mock-api, running on server 8000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+cd mock-api
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once api is running cd into into main folder, install dependencies & start
 
-### `npm run eject`
+```sh
+npm install 
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Design
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project was design in Adobe XD following the wireframe guideline provided. 
+I used RSA website as a reference and colour palette matches those of RSA. 
+![image](https://www.linkpicture.com/q/Web-1920-n-1_2.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Functionality Overview
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Tree component goes as follow
 
-## Learn More
+![image](https://www.linkpicture.com/q/rsa_diagram.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+User & addOn data is fetched from mock-api (running locally on port 8000) in quotePage component.
+I have used react functional components with react hooks to manage state across the tree component.
+Page is mainly divided in three components: **quote summary**, **quote plan** & **addOn list**. From QuotePlanType component user can switch between monthly and annual.
+Three re-usable components are used across the entire page: **button**, **quote price** & **small title**. 
+Navigation bar was imported as a separate component from Material UI for visual purposes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+**Thanks for visiting!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

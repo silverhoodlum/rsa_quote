@@ -1,0 +1,28 @@
+$main_pink: #FC43CB;
+$main_pink_light: #f66ca6;
+$main_purple: #47005D;
+$main_purple_light: #BD90CB;
+$main_purple_buttons: #9343FC;
+$addOn_color: #F6EFF8;
+$selected: #a943fc;
+
+$font_color_black: #444444;
+$font_color_light: #adadad;
+
+$button_light_color: #ECECEC;
+
+$desktop: 900px;
+$desktop_lg: 950px;
+
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin desktop_lg{
+    @media (min-width: #{$desktop_lg}){
+        @content;
+    }
+}
+

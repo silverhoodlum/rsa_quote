@@ -1,0 +1,39 @@
+@import "./../../styles/stylesheet.scss";
+
+.addOn-price-wrap{
+    margin-left: auto;
+    @include desktop{
+    width: 150px;
+    }
+    .addOn-price{
+        line-height: 24px;
+        font-size: 20px;
+        margin-left: auto;
+        padding-right: 4px;
+        font-weight: 600;
+        text-align: right;
+        
+        
+    }
+
+    .addOn-pricePlan{
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+
+.small-addOn{
+    .addOn-price-wrap{
+        display: flex;
+        flex-direction: row;
+        @include desktop{
+            flex-direction: column;
+        }
+        width: inherit;
+        .addOn-price{
+            @include desktop{
+                min-width: 80px;
+            }
+        }
+    }
+}
