@@ -3,7 +3,7 @@
 
 This project is a react practice test I have developed for RSA, it allows the usuer to add/remove addons as well as switching between monthly or annual payment plans.
 
-[DEMO](https://www.diagrameditor.com/)
+[DEMO](https://silverhoodlum.github.io/rsa_quote)
 
 ![image](https://s7.gifyu.com/images/ezgif-2-bbb6fcc3d7.gif)
 
@@ -15,7 +15,7 @@ This project has been build mainly using React, React-Hooks & Material UI
 
 ## Installation
 
-Install the mock-api, running on server 8000
+Install the mock-api, running on server 8000. Open a terminal
 
 ```sh
 cd mock-api
@@ -23,7 +23,7 @@ npm install
 npm start
 ```
 
-Once api is running cd into into main folder, install dependencies & start
+Once api is running open a new terminal & cd into into main folder, install dependencies & start
 
 ```sh
 npm install 
@@ -54,4 +54,5 @@ Navigation bar was imported as a separate component from Material UI for visual 
 
 
 **Thanks for visiting!**
+
 
