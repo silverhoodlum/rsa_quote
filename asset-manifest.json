@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rsa_quote/static/css/main.3a078fee.css",
+    "main.js": "/rsa_quote/static/js/main.434deaa3.js",
+    "index.html": "/rsa_quote/index.html",
+    "main.3a078fee.css.map": "/rsa_quote/static/css/main.3a078fee.css.map",
+    "main.434deaa3.js.map": "/rsa_quote/static/js/main.434deaa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a078fee.css",
+    "static/js/main.434deaa3.js"
+  ]
+}
